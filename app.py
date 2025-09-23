@@ -1,6 +1,6 @@
 """
 Laboratorio de Cloud Computing - GitHub Actions
-Contribuidores: Jean Marco, Osmar Ramírez
+Contribuidores: Jean Marco, Byron Tobar, Osmar Ramírez
 """
 
 import datetime
@@ -20,29 +20,29 @@ def mostrar_info():
     print("=" * 40)
 
 def mostrar_fecha_hora():
-    """Función para mostrar fecha y hora actual - Osmar Ramírez"""
+    """Función para mostrar fecha y hora actual - Byron Tobar"""
     ahora = datetime.datetime.now()
     print(f"Fecha y hora de ejecución: {ahora.strftime('%Y-%m-%d %H:%M:%S')}")
-    print("Función creada por: Osmar Ramírez")
+    print("Función creada por: Byron Tobar")
 
 def calcular_factorial(n=5):
-    """Calcula factorial de un número - Osmar Ramírez"""
+    """Calcula factorial de un número - Byron Tobar"""
     if n <= 1:
         return 1
     resultado = 1
     for i in range(2, n + 1):
         resultado *= i
-    print(f"El factorial de {n} es: {resultado} (calculado por Osmar Ramírez)")
+    print(f"El factorial de {n} es: {resultado} (calculado por Byron Tobar)")
     return resultado
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     mostrar_info()
     resultado = saludar()
     print(f"Status: {resultado}")
     
-    # Nuevas funciones agregadas por Osmar Ramírez
+    # Nuevas funciones
     print("\n" + "="*50)
-    print("NUEVAS FUNCIONALIDADES - OSMAR RAMÍREZ")
+    print("NUEVAS FUNCIONALIDADES - BYRON TOBAR")
     print("="*50)
     mostrar_fecha_hora()
     calcular_factorial()
