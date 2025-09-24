@@ -189,4 +189,4 @@ git diff
 ---
 
 **Curso:** Cloud Computing  
-**Laboratorio:** GitHub y GitHub Actions  
+**Laboratorio:** GitHub y GitHub Actions  # Última modificación: Tue Sep 23 18:11:27 CST 2025
