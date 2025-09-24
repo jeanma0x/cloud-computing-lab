@@ -12,7 +12,7 @@ En este laboratorio configuraremos un repositorio en GitHub, trabajaremos con ra
 
 1. Ingresamos a [https://github.com](https://github.com)
 2. Hacemos clic en **"New Repository"**
-3. **Nombre que usaremos:** `mi-primer-repo`
+3. **Nombre que usaremos:** `cloud-computing-lab`
 4. **Opciones que seleccionaremos:**
    - ✅ Inicializamos con `README.md`
    - ✅ Seleccionamos una licencia (por practicidad, no la usamos en este lab)
@@ -22,7 +22,7 @@ En este laboratorio configuraremos un repositorio en GitHub, trabajaremos con ra
 **Comandos que ejecutamos:**
 
 ```bash
-git clone https://github.com/usuario/mi-primer-repo.git
+git clone https://github.com/jeanma0x/cloud-computing-lab.git
 cd mi-primer-repo
 ```
 
@@ -46,7 +46,7 @@ git push origin main
 **Crearemos una nueva rama y agregaremos funcionalidad:**
 
 ```bash
-git checkout -b nueva-funcionalidad
+git checkout -b new-feature
 echo "print('Hola desde mi rama!')" > app.py
 git add app.py
 git commit -m "Agrego app.py con mensaje"
@@ -61,7 +61,7 @@ git push origin nueva-funcionalidad
 2. Haremos clic en **"New pull request"**
 3. Seleccionaremos:
    - **Base:** `main`
-   - **Compare:** `nueva-funcionalidad`
+   - **Compare:** `new-feature`
 4. **Crearemos el PR** (opcional: pediremos revisión)
 5. **Fusionaremos el PR** (merge)
 
@@ -70,13 +70,12 @@ git push origin nueva-funcionalidad
 **Crearemos la estructura de directorios:**
 
 ```
-mi-primer-repo/
+cloud-computing-lab/
 ├── .github/
 │   └── workflows/
 │       └── ci.yml
 ├── app.py
 ├── README.md
-└── LICENSE
 ```
 
 **Contenido que agregaremos al archivo `.github/workflows/ci.yml`:**
@@ -126,29 +125,28 @@ Al completar este laboratorio tendremos:
 ## Estructura final del proyecto
 
 ```
-mi-primer-repo/
+cloud-computing-lab/
 ├── .github/
 │   └── workflows/
 │       └── ci.yml
 ├── app.py
 ├── README.md
-└── LICENSE
 ```
 
 ## Verificamos el trabajo que hicimos
 
 ### Repositorio GitHub
-- [ ] Hemos creado el repositorio `mi-primer-repo`
+- [ ] Hemos creado el repositorio `cloud-computing-lab`
 - [ ] Hemos actualizado README.md con descripción
 - [ ] Hemos seleccionado la licencia MIT
 
 ### Trabajo con ramas
-- [ ] Hemos creado la rama `nueva-funcionalidad`
+- [ ] Hemos creado la rama `new-feature`
 - [ ] Hemos agregado el archivo `app.py` con el código Python
 - [ ] Hemos realizado commits correctamente
 
 ### Pull Request
-- [ ] Hemos creado PR desde `nueva-funcionalidad` hacia `main`
+- [ ] Hemos creado PR desde `new-feature` hacia `main`
 - [ ] Hemos fusionado el PR exitosamente
 - [ ] Hemos integrado la rama en `main`
 
